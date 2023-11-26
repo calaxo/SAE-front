@@ -1,69 +1,154 @@
+/* Header styles */
 .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #7cb4b8;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 16px;
+}
+
+/* Footer styles */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #7cb4b8;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+  
+
+
+  .main {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 0px;
-    margin: 0px;
-    position: sticky;
-    top: 0px;
-    z-index: 998;
-    height: 6em;
-    background-color: #7cb4b8;
-  
-  }
-
-
-  .footer {
-
-
-    text-align: center;
-  
-  
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    background-color: #7cb4b8;
-    z-index: 50;
-    padding: 0px;
-    margin: 0px;
-  
-    bottom: 1em;
-  
-    height: 6em;
-  
   }
   
-
-
-  .main{
-
-
-    padding-top: 1em;
-    padding-bottom: 2em;
-
-  }
 
 /* Ajoutez ces styles à votre fichier CSS */
 
 /* Style pour chaque élément de liste (enregistrement) */
 .etudiant-record {
-    border-bottom: 1px solid #ccc; /* Bordure inférieure pour créer une ligne */
-    padding: 8px 0; /* Espace intérieur vertical pour chaque enregistrement */
-  }
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  transition: background-color 0.3s ease; /* Ajout d'une transition pour un effet visuel */
+}
+
+.etudiant-record:hover {
+  background-color: #f5f5f5; /* Changement de couleur au survol de la souris */
+}
   
   /* Style pour le titre de chaque étudiant */
   .etudiant-title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    color: #333; /* Couleur du texte */
   }
   
   /* Style pour la boîte entourant chaque étudiant */
   .etudiant-box {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #7cb4b8; /* Couleur de la bordure */
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Couleur de fond */
+  }
+
+  button {
+    background-color: #7cb4b8;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: auto; /* Center the button horizontally */
+    margin-right: auto; /* Center the button horizontally */
+    display: block; /* Make the button a block element to center it */
   }
   
+  button:hover {
+    background-color: #6099a1;
+  }
+
+
+  /* Style pour les formulaires */
+.etudiant-changement {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.etudiant-changement input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.etudiant-changement input[type="submit"] {
+  background-color: #7cb4b8;
+  color: #fff;
+  cursor: pointer;
+}
+
+.etudiant-changement input[type="submit"]:hover {
+  background-color: #6099a1;
+}
+
+/* Style pour les champs de formulaire en lecture seule */
+.etudiant-info p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Style pour le bouton "Afficher tous" */
+button {
+  background-color: #7cb4b8;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #6099a1;
+}
+
+
+.imgpresence{
+  height: 3em;
+  padding-right: 1em;
+
+}
+
+
+.logo{
+
+  height: 8em;
+  width: 8;
+}
